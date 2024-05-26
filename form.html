@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .frm1{
+            display:grid;
+            grid-template-columns: 1fr 3fr;
+        }
+    </style>
+</head>
+<body>
+    <form action=""  method="">
+    <fieldset>
+        <legend>section1</legend>
+            <div class="frm1">
+                <label for="username">Name</label>
+                <input type="text" id="username" required minlength="5" maxlength="15">
+        
+                <label for="email">Email ID</label>
+                <input type="email" id="email" placeholder="jack@mail.com">
+        
+                <label for="password">password </label>
+                <input type="password" id =password>
+        
+                <label for="date">date </label>
+                <input type="date" id =date>
+        
+                <label for="time">time </label>
+                <input type="time" id =time>
+                
+                <label for="date & time">date & time </label>
+                <input type="datetime-local" id =date & time>
+        
+                <label for="ID">ID NUMBER </label>
+                <input type="ID" id =ID pattern="[0-9]{5}">
+        
+                
+                
+        
+                <label for="Datalist"> Datalist</label>
+                <input type="text" id="Datalist" list="list1">
+                <datalist id="list1">
+                    <option value="veg"></option>
+                    <option value="non-veg"></option>
+                </datalist>
+        
+        
+                <label for="">city</label>
+                <select> 
+                    <option value="visakhapatnam" selected > Visakhapatnam</option>
+                    <option value="ooty"> ooty </option>
+        
+                </select>
+                
+            </div>
+            <label for="">checkbox</label>
+            <div>
+               <label for="">Eng <input type="checkbox" checked disabled></label> 
+               <label for="">hindi</label> <input type="checkbox">
+               <label for="">Telugu</label> <input type="checkbox">
+            </div>
+    
+            <label for="">Radio</label>
+            <div>
+                <label for="">male <input type="radio" name="gender"></label>
+                <label for="">female <input type="radio" name="gender"></label>
+            </div>
+               
+       
+    </fieldset>
+    
+
+      
+
+        <input type="submit" id="submit">
+        <input type="Reset" id="reset">
+
+    </form>
+</body>
+</html>
