@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: hdr;
+            
+        }
+        .footer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: ftr;
+        }
+        .body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            grid-area: bdy;
+            border: 1px solid black;
+            font-size: 100px;
+           
+        }
+        .rightmenu{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+            grid-area: rmu;
+        }
+        .leftmenu{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: lmu;
+        }
+        .cont1{
+            height: 500px;
+            border: 1px solid black;
+            
+
+            display: grid;
+            grid-template-areas: 'hdr hdr hdr hdr hdr hdr hdr rmu rmu'
+                                 'lmu lmu bdy bdy bdy bdy bdy rmu rmu'
+                                 'lmu lmu bdy bdy bdy bdy bdy rmu rmu'
+                                 'lmu lmu bdy bdy bdy bdy bdy rmu rmu'
+                                 'lmu lmu bdy bdy bdy bdy bdy rmu rmu'
+                                 'lmu lmu bdy bdy bdy bdy bdy rmu rmu'
+                                 'lmu lmu ftr ftr ftr ftr ftr ftr ftr';
+        
+                                 background: linear-gradient(45deg, rgb(4, 117, 239), rgba(149, 210, 149, 0.829));
+        }
+        .navbar {
+   
+    overflow: hidden;
+}
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+}
+
+.navbar-item {
+    display: inline;
+}
+
+.navbar-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar-item a:hover {
+    background-color: #575757;
+}
+.navbar1 {
+   
+    display: flex;          /* Use flexbox to align items horizontally */
+    justify-content: space-around;  /* Distribute items evenly with space around them */
+    align-items: center;    /* Center items vertically */
+}
+
+
+
+.navbar-list1 {
+   
+   margin: 0;
+   padding: 0;
+   
+}
+
+.navbar-item {
+   display: block;
+}
+
+.navbar-item a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 20px;
+   text-decoration: none;
+}
+
+.navbar-item a:hover {
+   background-color: #2a3f2f;
+}
+        
+    </style>
+</head>
+<body>
+    
+    <div class="cont1">
+        
+        <div class="header">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item"><a href="#home">Home</a></li>
+                    <li class="navbar-item"><a href="#about">About</a></li>
+                    <li class="navbar-item"><a href="#services">Services</a></li>
+                    <li class="navbar-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+           
+        </div>
+        <div class="footer">
+            footer
+        </div>
+        <div class="body">
+            <img src="" alt="">
+            Sneha
+        </div>
+        <div class="rightmenu">
+            <nav class="navbar1">
+                <ul class="navbar-list1">
+                    <li class="navbar-item"><a href="#home">Home</a></li>
+                    <li class="navbar-item"><a href="#about">About</a></li>
+                    <li class="navbar-item"><a href="#services">Services</a></li>
+                    <li class="navbar-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+           
+        </div>
+        <div class="leftmenu">
+            left menu
+        </div>
+
+
+    </div>
+</body>
+</html>

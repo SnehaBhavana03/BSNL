@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+}
+
+.navbar-item {
+    display: inline;
+}
+
+.navbar-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar-item a:hover {
+    background-color: #575757;
+}
+
+/* Flex Output Containers Styles */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.output-container {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, and flex-basis */
+    text-align: center;
+    box-sizing: border-box;
+    min-width: 200px; /* Minimum width for responsive behavior */
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="#home">Home</a></li>
+            <li class="navbar-item"><a href="#about">About</a></li>
+            <li class="navbar-item"><a href="#services">Services</a></li>
+            <li class="navbar-item"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="output-container">Output 1</div>
+        <div class="output-container">Output 2</div>
+       
+    </div>
+    <div class="cont2">
+        <div class="name">Sneha</div>
+    </div>
+</body>
+</html>
